@@ -22,7 +22,7 @@ import {
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
-  const [color, setColor] = React.useState("navbar-transparent");
+  const [color, setColor] = React.useState("bg-info");
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
     return function cleanup() {
@@ -39,7 +39,7 @@ export default function IndexNavbar() {
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
-      setColor("navbar-transparent");
+      setColor("bg-info");
     }
   };
   const toggleCollapse = () => {

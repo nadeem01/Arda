@@ -28,7 +28,7 @@ import {
 
 export default function PageHeader(props) {
   return (
-    <div className="page-header header-filter" id="Hero" style={{backgroundColor: "#171941"}}>
+    <div className="page-header header-filter" id="Hero" style={{backgroundColor: "#ffffff"}}>
       <div className="squares square1" />
       <div className="squares square2" />
       <div className="squares square3" />
@@ -38,8 +38,8 @@ export default function PageHeader(props) {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">{props.title}</h1>
-          <h4 className="d-none d-sm-block text-success">
+          <h1 className="h1-seo text-dark">{props.title}</h1>
+          <h4 className="d-none d-sm-block text-info">
             {props.desc}
           </h4>
           <Button href={props.link} className="mt-3" color={props.btn_color}>{props.btn}</Button>
