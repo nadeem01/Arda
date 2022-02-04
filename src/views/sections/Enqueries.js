@@ -17,10 +17,10 @@ export default function Download() {
       <Container>
         <Row className="justify-content-md-center">
           <Col className="text-center" lg="8" md="12">
-            <h2 className="title">
+            <h2 className="title text-dark">
               Have any Queries to ask? Feel free to Reach us
             </h2>
-            <h4 className="description">
+            <h4 className="description text-dark">
               Cause if you do, it can be yours for FREE. Hit the button below to
               navigate to Creative Tim where you can find the design system in
               React format. Start a new project or give an old Bootstrap project
@@ -46,10 +46,10 @@ export default function Download() {
         <br />
         <Row className="row-grid align-items-center my-md">
           <Col lg="6">
-            <h3 className="text-info font-weight-light mb-2">
+            <h3 className="text-info font-weight-bold mb-2">
               We Love to Get Connected with YOU!
             </h3>
-            <h4 className="mb-0 font-weight-light">
+            <h4 className="mb-0 font-weight-light text-dark">
               Let's get in touch on any of these platforms.
             </h4>
           </Col>

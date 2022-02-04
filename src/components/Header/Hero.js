@@ -28,7 +28,7 @@ import {
 
 export default function PageHeader(props) {
   return (
-    <div className="page-header header-filter" id="Hero">
+    <div className="page-header header-filter" id="Hero" style={{backgroundColor: "#171941"}}>
       <div className="squares square1" />
       <div className="squares square2" />
       <div className="squares square3" />

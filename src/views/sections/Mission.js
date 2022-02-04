@@ -39,7 +39,7 @@ export default function AboutUs() {
           <Row>
             <Col lg="6">
               <h1 className="title text-info">Our Mission</h1>
-              <p className="description">
+              <p className="description font-weight-normal">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Explicabo, minus. Distinctio laboriosam doloremque magnam cum
                 voluptate unde aliquam architecto laborum.

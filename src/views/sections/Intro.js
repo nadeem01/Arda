@@ -55,7 +55,7 @@ export default function intro() {
           <div className="col-12">
             {/* <h2>Know <b>Arda?</b></h2> */}
             <blockquote className="blockquote">
-              <p className="mb-0">
+              <p className="mb-0 font-weight-normal">
                 Arda - is a digital IT Consulting & Service provider company
                 established around 5 years back with the mission to build
                 Futuristic products equipped with the best Tools and
@@ -71,10 +71,10 @@ export default function intro() {
           </div>
           <Row className="justify-content-between align-items-center">
             <Col className="mb-5 mb-lg-0" lg="5">
-              <h1 className="font-weight-light text-warning">
+              <h1 className="font-weight-bold text-warning">
                 5 Years of Innovations
               </h1>
-              <p className="text-white mt-4">
+              <p className="text-dark mt-4 font-weight-normal">
                 Black Design comes with three pre-built pages to help you get
                 started faster. You can change the text and images and you're
                 good to go.

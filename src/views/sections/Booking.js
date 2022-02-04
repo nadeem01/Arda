@@ -35,12 +35,12 @@ export default function Signup() {
         <div className="squares square-4" />
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
-            <h3 className="display-3 text-white">
+            <h3 className="display-3 text-dark">
               Get in Touch {" "}
               <br />
-              <span className="text-white">Book a Quick call</span>
+              <span className="text-dark">Book a Quick call</span>
             </h3>
-            <p className="text-white mb-3">
+            <p className="text-dark mb-3">
               The Design System comes with four pre-built pages to help you get
               started faster. You can change the text and images and you're good
               to go. More importantly, looking at them will give you a picture
