@@ -31,8 +31,8 @@ export default function Hardware() {
     <Container className="section mb-5" id="Hardware">
       <Row className="justify-content-center">
         <Col>
-          <h2 className="text-center text-info">Hardware</h2>
-          <p className="text-center">
+          <h2 className="display-2 text-center text-info">Hardware</h2>
+          <p className="text-center font-weight-normal">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repudiandae deserunt nihil quod atque accusantium perferendis
             impedit reprehenderit sint necessitatibus et!

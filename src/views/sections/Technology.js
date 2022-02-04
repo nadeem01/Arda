@@ -28,14 +28,15 @@ import {
 
 export default function Technology() {
   return (
+    <>
     <Container className="section mb-5" id="Technology">
       <Row className="justify-content-center">
         <Col>
-          <h2 className="text-center text-info">Technology</h2>
-          <p className="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae deserunt nihil quod atque accusantium perferendis
-            impedit reprehenderit sint necessitatibus et!
+          <h2 className="display-2 text-center text-info">Technology</h2>
+          <p className="text-center font-weight-normal">
+            We use digital, graphic, and spatial thinking to create
+            category-leading brand experiences that are meaningful to our
+            clients and deliver value.
           </p>
         </Col>
       </Row>
@@ -54,8 +55,10 @@ export default function Technology() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              voluptates! Molestiae deleniti similique tempore fugit.
+              Cloud Web Hosting packages with lowest guaranteed prices, that
+              fits to all your business needs. Cloud hosting is the latest form
+              of hosting that has become extremely popular over the past few
+              years.
             </p>
           </Row>
         </Col>
@@ -70,8 +73,9 @@ export default function Technology() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              Unleash the power of your data, generate transformative insights,
+              optimize processes, and enhance your ROI with enterprise data
+              analytics.
             </p>
           </Row>
         </Col>
@@ -86,17 +90,13 @@ export default function Technology() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              Our turnkey solutions are custom-designed to fit into your
+              enterprise software ecosystem. Anything you can dream up, from a
+              custom desktop application to a global app, we can build it.
             </p>
           </Row>
         </Col>
       </Row>
-      <img
-          alt="..."
-          className="path path1"
-          src={require("assets/img/path3.png")}
-        />
       <Row>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
@@ -109,8 +109,8 @@ export default function Technology() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              When it comes to mobile applications and mobile development
+              services, we are leading this world in Pakistan.
             </p>
           </Row>
         </Col>
@@ -125,8 +125,9 @@ export default function Technology() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              Our exceptionally imaginative and in fact sound group encourages
+              you to fabricate dynamic and appealing eCommerce sites that will
+              pull in more guests and transform clients into faithful clients.
             </p>
           </Row>
         </Col>
@@ -141,12 +142,14 @@ export default function Technology() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              Whatever your needs are, regardless of whether it’s another B2B or
+              B2C online business model-based business, we can tailor all your
+              solutions into perfect needs.
             </p>
           </Row>
         </Col>
       </Row>
     </Container>
+    </>
   );
 }

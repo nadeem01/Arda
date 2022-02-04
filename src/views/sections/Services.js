@@ -31,19 +31,14 @@ export default function Services() {
     <Container className="section mb-5" id="Services">
       <Row className="justify-content-center">
         <Col>
-          <h2 className="text-center text-info">Services</h2>
-          <p className="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae deserunt nihil quod atque accusantium perferendis
-            impedit reprehenderit sint necessitatibus et!
+          <h2 className="display-2 text-center text-info">Services</h2>
+          <p className="text-center font-weight-normal">
+            We provide specialized technology-oriented services by combining the
+            processes and functions of software, hardware, networks, electronics
+            and infrastructure.
           </p>
         </Col>
       </Row>
-      <img
-          alt="..."
-          className="path path1"
-          src={require("assets/img/path5.png")}
-        />
       <Row className="justify-content-center">
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
@@ -56,8 +51,11 @@ export default function Services() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              voluptates! Molestiae deleniti similique tempore fugit.
+              We provide functions, maintenance, and support of
+              information technology devices, or services including but not
+              limited to computer systems application development and
+              maintenance; systems integration and interoperability; operating
+              systems maintenance and design
             </p>
           </Row>
         </Col>

@@ -1,10 +1,11 @@
 *{
     /* border-color: #1d8cf8 !important; */
-    /* outline: #1d8cf8 !important; */
+    outline: #1c1c2125 !important;
 }
 
 body{
-    background-color: #f1f1f1 !important;
+    /* background-color: #f1f1f1 !important; */
+    background-color: white !important;
 }
 
 h3{

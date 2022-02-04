@@ -30,11 +30,10 @@ export default function Consulting() {
     <Container className="section mb-5" id="Consulting">
       <Row className="justify-content-center">
         <Col>
-          <h2 className="text-center text-info">Consulting</h2>
-          <p className="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae deserunt nihil quod atque accusantium perferendis
-            impedit reprehenderit sint necessitatibus et!
+          <h2 className="display-2 text-center text-info">Consulting</h2>
+          <p className="text-center font-weight-normal">
+            We advises clients, businesses and companies on how to best use information technology (IT)
+            practices to achieve their business objectives.
           </p>
         </Col>
       </Row>

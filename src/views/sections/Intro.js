@@ -48,20 +48,19 @@ export default function intro() {
         <img
           alt="..."
           className="path path1"
-          src={require("assets/img/path1.png")}
+          src={require("assets/img/waves.png")}
+          style={{filter: "invert(100%)"}}
         />
 
         <div className="row d-flex flex-row">
           <div className="col-12">
-            {/* <h2>Know <b>Arda?</b></h2> */}
-            <blockquote className="blockquote">
-              <p className="mb-0 font-weight-normal">
+            <h2 className="display-4" style={{color: "#171941"}}>Background</h2>
+              <h3 className="mb-0 font-weight-normal text-dark">
                 Arda - is a digital IT Consulting & Service provider company
                 established around 5 years back with the mission to build
                 Futuristic products equipped with the best Tools and
                 Technologies available in the market.
-              </p>
-            </blockquote>
+              </h3>
           </div>
         </div>
 

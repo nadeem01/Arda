@@ -69,7 +69,7 @@ export default function Footer() {
             </Nav>
           </Col>
           <Col md="3">
-            <h3 className="title">Follow us:</h3>
+            <h3 className="title text-white">Follow us:</h3>
             <div className="btn-wrapper profile">
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"

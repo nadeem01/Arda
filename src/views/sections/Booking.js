@@ -27,7 +27,12 @@ export default function Signup() {
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [passwordFocus, setPasswordFocus] = React.useState(false);
   return (
-    <div className="section section-signup" id="Booking">
+    <div className="section" id="Booking">
+            <img
+        className="path path1"
+        src={require("assets/img/triunghiuri.png")}
+        style={{ filter: "invert(100%)" }}
+      />
       <Container>
         <div className="squares square-1" />
         <div className="squares square-2" />
@@ -36,8 +41,7 @@ export default function Signup() {
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
             <h3 className="display-3 text-dark">
-              Get in Touch {" "}
-              <br />
+              Let's Start <br />
               <span className="text-dark">Book a Quick call</span>
             </h3>
             <p className="text-dark mb-3">
@@ -48,19 +52,19 @@ export default function Signup() {
               System.
             </p>
             <div className="btn-wrapper">
-              <Button color="primary" to="register-page" tag={Link}>
-                Register Page
+              <Button color="info" to="#" tag={Link}>
+                Contact Us
               </Button>
             </div>
           </Col>
           <Col className="mb-lg-auto" lg="6">
-            <Card className="card-register">
+            <Card
+              className="card-register"
+              style={{ backgroundColor: "#ffffff" }}
+            >
               <CardHeader>
-                <CardImg
-                  alt="..."
-                  src={require("assets/img/square-purple-1.png")}
-                />
-                <CardTitle tag="h4">Register</CardTitle>
+                <CardImg alt="..." src={require("assets/img/square5.png")} />
+                <CardTitle tag="h4">Ready?</CardTitle>
               </CardHeader>
               <CardBody>
                 <Form className="form">
@@ -72,7 +76,7 @@ export default function Signup() {
                   >
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="tim-icons icon-single-02" />
+                        <i className="text-dark tim-icons icon-single-02" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
@@ -90,7 +94,7 @@ export default function Signup() {
                   >
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="tim-icons icon-email-85" />
+                        <i className="text-dark tim-icons icon-email-85" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
@@ -107,7 +111,7 @@ export default function Signup() {
                   >
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="tim-icons icon-mobile" />
+                        <i className="text-dark tim-icons icon-mobile" />
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
@@ -120,8 +124,9 @@ export default function Signup() {
                   <FormGroup check className="text-left">
                     <Label check>
                       <Input type="checkbox" />
-                      <span className="form-check-sign" />I agree to the{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <span className="text-dark form-check-sign" />
+                      <span className="text-dark">I agree to the </span>
+                      <a href="#pablo" onClick={(e) => e.preventDefault()} className="text-info">
                         terms and conditions
                       </a>
                       .
@@ -130,8 +135,8 @@ export default function Signup() {
                 </Form>
               </CardBody>
               <CardFooter>
-                <Button className="btn-round" color="primary" size="lg">
-                  Get Started
+                <Button className="btn-round" color="info" size="lg">
+                  Submit Form
                 </Button>
               </CardFooter>
             </Card>

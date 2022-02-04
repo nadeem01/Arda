@@ -13,7 +13,7 @@ export default function Partners() {
       <Container>
         <Row className="justify-content-center">
           <Col lg="8" md="12">
-            <h2 className="title text-info">Our Partners</h2>
+            <h2 className="display-2 text-info text-center">Our Partners</h2>
             <h4 className="description font-weight-normal">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
               eligendi dolore ad eum magni ratione, enim dolor ipsam veritatis
