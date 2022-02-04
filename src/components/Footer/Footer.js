@@ -18,7 +18,10 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md="3">
-            <h1 className="title">Arda</h1>
+            <h1 className="title">Arda
+            <br />
+            <span className="lead">The Future is Digital</span>
+            </h1>
           </Col>
           <Col md="3">
             <Nav>
@@ -102,7 +105,7 @@ export default function Footer() {
                 id="tooltip318450378"
                 target="_blank"
               >
-                <i className="fab fa-dribbble" />
+                <i className="fab fa-instagram" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip318450378">
                 Follow us

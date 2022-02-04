@@ -79,12 +79,12 @@ export default function Download() {
             <Button
               className="btn-icon btn-round"
               color="github"
-              href="https://github.com/creativetimofficial"
+              href="#"
               id="tooltip877922017"
               size="lg"
               target="_blank"
             >
-              <i className="fab fa-github" />
+              <i className="fab fa-instagram" />
             </Button>
             <UncontrolledTooltip delay={0} target="tooltip877922017">
               Star on Github

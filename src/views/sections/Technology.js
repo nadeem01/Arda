@@ -64,7 +64,7 @@ export default function Technology() {
         </Col>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-coins text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>
@@ -81,7 +81,7 @@ export default function Technology() {
         </Col>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-bulb-63 text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>
@@ -100,7 +100,7 @@ export default function Technology() {
       <Row>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-mobile text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>
@@ -116,7 +116,7 @@ export default function Technology() {
         </Col>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cart text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>
@@ -133,7 +133,7 @@ export default function Technology() {
         </Col>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-scissors text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>
