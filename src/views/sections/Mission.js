@@ -52,7 +52,7 @@ export default function AboutUs() {
               </p>
             </Col>
             <Col lg="6">
-              <img className="rounded" src={require("assets/img/lora.jpg")} />
+              <img className="rounded" src={require("assets/img/start-up.png")} />
             </Col>
           </Row>
         </Container>

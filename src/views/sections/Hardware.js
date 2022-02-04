@@ -42,7 +42,7 @@ export default function Hardware() {
       <Row className="justify-content-center">
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-laptop text-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>
@@ -58,7 +58,7 @@ export default function Hardware() {
         </Col>
         <Col className="p-5" xs="12" sm="12" md="12" lg="4">
           <Row className="justify-content-center">
-            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-user-run text-info" />
+            <i className="display-1 border border-info rounded-circle p-3 tim-icons icon-cloud-download-93 text-white text-info bg-info" />
           </Row>
           <Row className="justify-content-center">
             <b>

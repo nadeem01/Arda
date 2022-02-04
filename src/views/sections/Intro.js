@@ -49,18 +49,20 @@ export default function intro() {
           alt="..."
           className="path path1"
           src={require("assets/img/waves.png")}
-          style={{filter: "invert(100%)"}}
+          style={{ filter: "invert(100%)" }}
         />
 
         <div className="row d-flex flex-row">
           <div className="col-12">
-            <h2 className="display-4" style={{color: "#171941"}}>Background</h2>
-              <h3 className="mb-0 font-weight-normal text-dark">
-                Arda - is a digital IT Consulting & Service provider company
-                established around 5 years back with the mission to build
-                Futuristic products equipped with the best Tools and
-                Technologies available in the market.
-              </h3>
+            <h2 className="display-4" style={{ color: "#171941" }}>
+              Background
+            </h2>
+            <h3 className="mb-0 font-weight-normal text-dark">
+              Arda - is a digital IT Consulting & Service provider company
+              established around 5 years back with the mission to build
+              Futuristic products equipped with the best Tools and Technologies
+              available in the market.
+            </h3>
           </div>
         </div>
 
@@ -87,11 +89,12 @@ export default function intro() {
               </Button>
             </Col>
             <Col lg="6">
-              <UncontrolledCarousel
+              <img src={require("assets/img/maintenance.png")} />
+              {/* <UncontrolledCarousel
                 items={carouselItems}
                 indicators={false}
                 autoPlay={false}
-              />
+              /> */}
             </Col>
           </Row>
         </div>
