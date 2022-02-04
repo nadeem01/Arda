@@ -79,7 +79,7 @@ export default function intro() {
               <h1 className="font-weight-bold text-warning">
                 5 Years of Innovations
               </h1>
-              <p className="text-dark mt-4 font-weight-normal">
+              <p className="text-dark mt-4 font-weight-normal description">
                 Black Design comes with three pre-built pages to help you get
                 started faster. You can change the text and images and you're
                 good to go.

@@ -44,7 +44,7 @@ export default function Signup() {
               Let's Start <br />
               <span className="text-dark">Book a Quick call</span>
             </h3>
-            <p className="text-dark mb-3">
+            <p className="text-dark mb-3 font-weight-normal description">
               The Design System comes with four pre-built pages to help you get
               started faster. You can change the text and images and you're good
               to go. More importantly, looking at them will give you a picture
@@ -64,7 +64,7 @@ export default function Signup() {
             >
               <CardHeader>
                 <CardImg alt="..." src={require("assets/img/square5.png")} />
-                <CardTitle tag="h4">Ready?</CardTitle>
+                <CardTitle tag="h4" className="ml-2">Ready?</CardTitle>
               </CardHeader>
               <CardBody>
                 <Form className="form">
