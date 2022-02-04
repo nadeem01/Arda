@@ -22,6 +22,7 @@ import {
   Label,
   UncontrolledCarousel,
 } from "reactstrap";
+import Image from "views/sections/Image.js";
 
 const carouselItems = [
   {
@@ -47,17 +48,15 @@ export default function intro() {
       <Container>
         <img
           alt="..."
-          className="path path1"
-          src={require("assets/img/waves.png")}
-          style={{ filter: "invert(100%)" }}
+          src={require("assets/logo/logo.jpg")}
         />
 
-        <div className="row d-flex flex-row">
+        <div className="row d-flex flex-row mt-3">
           <div className="col-12">
-            <h2 className="display-4" style={{ color: "#171941" }}>
+            {/* <h2 className="display-4 text-center" style={{ color: "#171941" }}>
               Background
-            </h2>
-            <h3 className="mb-0 font-weight-normal text-dark">
+            </h2> */}
+            <h3 className="mb-0 font-weight-normal text-dark text-center">
               Arda - is a digital IT Consulting & Service provider company
               established around 5 years back with the mission to build
               Futuristic products equipped with the best Tools and Technologies
@@ -65,7 +64,12 @@ export default function intro() {
             </h3>
           </div>
         </div>
-
+        <img
+          alt="..."
+          className="path path1"
+          src={require("assets/img/waves.png")}
+          style={{ filter: "invert(100%)" }}
+        />
         <div className="section mt-3 mt-sm-3 mt-md-3 mt-lg-5">
           <div className="title">
             <h3 className="text-muted">2015 - Present</h3>
