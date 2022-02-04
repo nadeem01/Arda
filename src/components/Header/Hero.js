@@ -39,7 +39,7 @@ export default function PageHeader(props) {
       <Container>
         <div className="content-center brand">
           <h1 className="h1-seo text-dark">{props.title}</h1>
-          <h4 className="d-none d-sm-block text-info">
+          <h4 className="title d-none d-sm-block text-info font-weight-bold">
             {props.desc}
           </h4>
           <Button href={props.link} className="mt-3" color={props.btn_color}>{props.btn}</Button>

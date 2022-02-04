@@ -65,7 +65,7 @@ export default function IndexNavbar() {
         <div className="navbar-translate">
           {/* LOGO */}
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>arda </span>
+            <span><img src={require("assets/logo/nav-logo.png")}/> </span>
           </NavbarBrand>
           {/* Popup */}
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
