@@ -51,8 +51,10 @@ export default function Consulting() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              voluptates! Molestiae deleniti similique tempore fugit.
+             Digital Transformation Services engage senior business leaders
+            in the changing world of industrial technology to define and 
+            accelerate their digital agenda.
+            
             </p>
           </Row>
         </Col>
@@ -67,8 +69,9 @@ export default function Consulting() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+            Enterprise resource planning (ERP) is a mainstay technology in
+             businesses that want to gather, analyze and share insights among multiple 
+             departments, such as accounting, operations.
             </p>
           </Row>
         </Col>

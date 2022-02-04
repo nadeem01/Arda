@@ -33,9 +33,8 @@ export default function Hardware() {
         <Col>
           <h2 className="display-2 text-center text-info">Hardware</h2>
           <p className="text-center font-weight-normal">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repudiandae deserunt nihil quod atque accusantium perferendis
-            impedit reprehenderit sint necessitatibus et!
+          Hardware makers and entrepreneurs meet up and share their electronics projects on Hackster.
+           There is no better resource for finding electronic maker projects to learn from !
           </p>
         </Col>
       </Row>
@@ -51,8 +50,9 @@ export default function Hardware() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              voluptates! Molestiae deleniti similique tempore fugit.
+            Accelerate your digital transformation journey with the right
+             computing devices. Build a workplace that adapts to new
+              challenges and be more productive and creative wherever you are.
             </p>
           </Row>
         </Col>
@@ -67,8 +67,9 @@ export default function Hardware() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              Hardware support is vital to a business's IT. It works to ensure smooth,trouble-free 
+        operations.In addition to software, device driver, and firmware updates,hardware can 
+        fail, requiring troubleshooting .
             </p>
           </Row>
         </Col>

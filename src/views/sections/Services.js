@@ -72,8 +72,10 @@ export default function Services() {
           </Row>
           <Row className="justify-content-center">
             <p className="text-center font-weight-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              error id laborum excepturi voluptates repellat.
+              IT services are necessary to keep your business
+           running at peak performance.  Network security solutions
+        include firewalls, anti-virus software,  web filtering, patch management, 
+      built-in VPNs, and regularly scheduled check-ups from your IT service provider.
             </p>
           </Row>
         </Col>
