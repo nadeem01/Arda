@@ -60,7 +60,7 @@ export default function ConsultingSection() {
                 maiores, quis unde laborum dolorum magni amet pariatur odio
                 nesciunt voluptas provident sunt aut!
               </p>
-              <Button className="mt-3" color="warning">
+              <Button className="mt-3" color="warning" href="/consulting">
                 Explore More
               </Button>
             </Col>

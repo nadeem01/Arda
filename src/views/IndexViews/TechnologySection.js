@@ -67,7 +67,7 @@ export default function TechnologySection() {
                 maiores, quis unde laborum dolorum magni amet pariatur odio
                 nesciunt voluptas provident sunt aut!
               </p>
-              <Button className="mt-3" color="warning">
+              <Button className="mt-3" color="warning" href="/technology">
                 Explore More
               </Button>
             </Col>

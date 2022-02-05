@@ -128,19 +128,19 @@ export default function IndexNavbar() {
                 Solutions
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="/#Technology">
+                <DropdownItem href="/technology">
                   <i className="tim-icons icon-atom" />
                   Technology
                 </DropdownItem>
-                <DropdownItem href="/#Consulting">
+                <DropdownItem href="/consulting">
                   <i className="tim-icons icon-bulb-63" />
                   Consulting
                 </DropdownItem>
-                <DropdownItem href="/#Services">
+                <DropdownItem href="/services">
                   <i className="tim-icons icon-settings" />
                   Services
                 </DropdownItem>
-                <DropdownItem href="/#Hardware">
+                <DropdownItem href="/hardware">
                   <i className="tim-icons icon-laptop" />
                   Hardware
                 </DropdownItem>
