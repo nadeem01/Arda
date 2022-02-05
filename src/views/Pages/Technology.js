@@ -28,7 +28,6 @@ import {
 
 // Components
 import Navbar from "components/Navbar/Navbar.js";
-import Hero from "components/Header/Hero.js";
 import Enqueries from "components/Enqueries/Enqueries.js";
 import Footer from "components/Footer/Footer.js";
 
@@ -66,7 +65,7 @@ export default function Technology() {
                 <h2 className="display-2 text-dark font-weight-bold">
                   Technology at Arda
                 </h2>
-                <p className="descriptio text-dark">
+                <p className="description text-dark font-weight-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dolorem, itaque? Explicabo autem laborum, totam facere
                   assumenda commodi sint incidunt reiciendis!
