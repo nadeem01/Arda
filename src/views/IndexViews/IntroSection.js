@@ -46,24 +46,27 @@ export default function intro() {
   return (
     <Container className="section">
       <Container>
-        <img
-          alt="..."
-          src={require("assets/logo/logo.jpg")}
-        />
-
-        <div className="row d-flex flex-row mt-3">
-          <div className="col-12">
-            {/* <h2 className="display-4 text-center" style={{ color: "#171941" }}>
-              Background
-            </h2> */}
-            <h3 className="mb-0 font-weight-normal text-dark text-center">
+        <Row>
+          <Col lg="6">
+            <h2 className="display-2 text-dark font-weight-bold">
+              Redefining IT Solutions
+            </h2>
+            <p className="description text-dark font-weight-normal">
               Arda - is a digital IT Consulting & Service provider company
               established around 5 years back with the mission to build
               Futuristic products equipped with the best Tools and Technologies
               available in the market.
-            </h3>
-          </div>
-        </div>
+              <br /> <br /> <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              reiciendis pariatur incidunt. Cum, cumque alias laudantium iusto
+              praesentium ratione similique.
+            </p>
+          </Col>
+          <Col lg="6">
+            <img src={require("assets/img/earth2.jpg")} />
+          </Col>
+        </Row>
+        <div className="squares square4" />
         <img
           alt="..."
           className="path path1"
@@ -84,11 +87,7 @@ export default function intro() {
                 started faster. You can change the text and images and you're
                 good to go.
               </p>
-              <Button
-                className="mt-4"
-                color="warning"
-                href="#"
-              >
+              <Button className="mt-4" color="warning" href="#">
                 Explore What We Do
               </Button>
             </Col>
@@ -102,6 +101,7 @@ export default function intro() {
             </Col>
           </Row>
         </div>
+        <div className="squares square5" />
       </Container>
     </Container>
   );

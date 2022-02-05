@@ -72,8 +72,10 @@ export default function TechnologySection() {
               </Button>
             </Col>
           </Row>
+          <div className="squares square7" />
         </Container>
       </Container>
+
     </>
   );
 }

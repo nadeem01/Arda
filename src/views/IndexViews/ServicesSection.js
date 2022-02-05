@@ -48,6 +48,7 @@ export default function ServicesSection() {
   return (
     <>
       <Container className="section">
+      <div className="squares square1" />
         <Container>
           <Row>
             <Col lg="6">
@@ -72,6 +73,7 @@ export default function ServicesSection() {
               </Button>
             </Col>
           </Row>
+
         </Container>
       </Container>
     </>
