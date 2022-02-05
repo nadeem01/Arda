@@ -207,6 +207,12 @@ export default function IndexNavbar() {
               </DropdownMenu>
             </UncontrolledDropdown>
 
+            <NavItem className="mr-0 mr-lg-3">
+              <NavLink href="#">
+                Get in Touch &nbsp; <i className="tim-icons icon-spaceship" />
+              </NavLink>
+            </NavItem>
+
             {/* Socials */}
             {/* Twitter Handle */}
             <NavItem className="p-0">
@@ -218,7 +224,7 @@ export default function IndexNavbar() {
                 title="Follow us on Twitter"
               >
                 <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
+                <p className="d-lg-none d-xl-none text-white">Twitter</p>
               </NavLink>
             </NavItem>
             {/* Facebook Handle */}
@@ -231,7 +237,7 @@ export default function IndexNavbar() {
                 title="Like us on Facebook"
               >
                 <i className="fab fa-facebook-square" />
-                <p className="d-lg-none d-xl-none">Facebook</p>
+                <p className="d-lg-none d-xl-none text-white">Facebook</p>
               </NavLink>
             </NavItem>
             {/* Instagram Handle */}
@@ -244,19 +250,8 @@ export default function IndexNavbar() {
                 title="Follow us on Instagram"
               >
                 <i className="fab fa-instagram" />
-                <p className="d-lg-none d-xl-none">Instagram</p>
+                <p className="d-lg-none d-xl-none text-white">Instagram</p>
               </NavLink>
-            </NavItem>
-
-            {/* Reach Us */}
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="primary"
-                href="/#Booking"
-              >
-                <i className="tim-icons icon-spaceship" /> Get in Touch
-              </Button>
             </NavItem>
           </Nav>
         </Collapse>

@@ -1,14 +1,18 @@
 import React from "react";
 
+// Components
 import Navbar from "components/Navbar/Navbar.js";
 import Hero from "components/Header/Hero.js";
-import Intro from "views/sections/Intro.js";
-import Technology from "views/sections/Technology.js";
-import Consulting from "views/sections/Consulting.js";
-import Services from "views/sections/Services.js";
-import Hardware from "views/sections/Hardware.js";
-import Booking from "views/sections/Booking"
 import Footer from "components/Footer/Footer.js";
+
+// Index Sections
+import IntroSection from "views/IndexViews/IntroSection";
+import Heading from "views/IndexViews/Heading.js";
+import TechnologySection from "views/IndexViews/TechnologySection.js";
+import ConsultingSection from "views/IndexViews/ConsultingSection.js";
+import ServicesSection from "views/IndexViews/ServicesSection.js";
+import HardwareSection from "views/IndexViews/HardwareSection.js";
+import BookingSection from "views/IndexViews/BookingSection.js";
 
 export default function Index() {
   React.useEffect(() => {
@@ -30,12 +34,13 @@ export default function Index() {
           link="/#Booking"
         />
         <div className="main">
-          <Intro />
-          <Technology />
-          <Consulting />
-          <Services />
-          <Hardware />
-          <Booking />
+          <IntroSection />
+          <Heading />
+          <TechnologySection />
+          <ConsultingSection />
+          <ServicesSection />
+          <HardwareSection />
+          <BookingSection />
         </div>
         <Footer />
       </div>

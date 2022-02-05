@@ -22,7 +22,7 @@ import {
   Label,
   UncontrolledCarousel,
 } from "reactstrap";
-import Image from "views/sections/Image.js";
+import Image from "views/Pages/Image.js";
 
 const carouselItems = [
   {

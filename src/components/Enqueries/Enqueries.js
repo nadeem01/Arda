@@ -9,11 +9,7 @@ export default function Download() {
       data-background-color="black"
       id="Enqueries"
     >
-      <img
-        alt="..."
-        className="path"
-        src={require("assets/img/path1.png")}
-      />
+      <img alt="..." className="path" src={require("assets/img/path1.png")} />
       <Container>
         <Row className="justify-content-md-center">
           <Col className="text-center" lg="8" md="12">
