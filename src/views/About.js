@@ -1,12 +1,12 @@
 import React from "react";
 
+// Components
 import Navbar from "components/Navbar/Navbar.js";
-import Footer from "components/Footer/Footer.js";
 import Hero from "components/Header/Hero.js";
-import Mission from "views/sections/Mission.js"
-import Team from "views/sections/Team.js";
-import Partners from "views/sections/Partners.js";
-import Enqueries from "views/sections/Enqueries.js";
+import Footer from "components/Footer/Footer.js";
+
+// About Sections
+
 
 export default function About() {
   React.useEffect(() => {
@@ -29,10 +29,10 @@ export default function About() {
         />
         <div className="main">
 
-          <Mission />
+          {/* <Mission />
           <Team />
           <Partners />
-          <Enqueries />
+          <Enqueries /> */}
 
         </div>
         <Footer />
