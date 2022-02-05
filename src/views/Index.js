@@ -3,11 +3,14 @@ import React from "react";
 import Navbar from "components/Navbar/Navbar.js";
 import Hero from "components/Header/Hero.js";
 import Intro from "views/sections/Intro.js";
-import Technology from "views/sections/Technology.js";
-import Consulting from "views/sections/Consulting.js";
-import Services from "views/sections/Services.js";
-import Hardware from "views/sections/Hardware.js";
-import Booking from "views/sections/Booking"
+
+import Heading from "views/IndexViews/Heading.js";
+import TechnologySection from "views/IndexViews/TechnologySection.js";
+import ConsultingSection from "views/IndexViews/ConsultingSection.js";
+import ServicesSection from "views/IndexViews/ServicesSection.js";
+import HardwareSection from "views/IndexViews/HardwareSection.js";
+
+import Booking from "views/sections/Booking";
 import Footer from "components/Footer/Footer.js";
 
 export default function Index() {
@@ -31,10 +34,15 @@ export default function Index() {
         />
         <div className="main">
           <Intro />
-          <Technology />
-          <Consulting />
-          <Services />
-          <Hardware />
+
+          <Heading />
+          <TechnologySection />
+          <ConsultingSection />
+          <ServicesSection />
+          <HardwareSection />
+
+
+
           <Booking />
         </div>
         <Footer />
