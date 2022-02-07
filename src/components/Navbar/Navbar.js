@@ -22,24 +22,24 @@ import {
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
-  const [color, setColor] = React.useState("bg-info");
+  const [color, setColor] = React.useState("bg-white");
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
     };
-  },[]);
+  }, []);
   const changeColor = () => {
     if (
       document.documentElement.scrollTop > 99 ||
       document.body.scrollTop > 99
     ) {
-      setColor("bg-info");
+      setColor("bg-white");
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
-      setColor("bg-info");
+      setColor("bg-white");
     }
   };
   const toggleCollapse = () => {
@@ -52,20 +52,19 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  const scrollToDownload = () => {
-    document
-      .getElementById("download-section")
-      .scrollIntoView({ behavior: "smooth" });
+  // Smooth scroll to Booking section
+  const scrollToBooking = () => {
+    document.getElementById("Booking").scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
+    <Navbar className={"fixed-top " + color + " shadow-sm"} color-on-scroll="100" expand="lg">
       <Container>
-
-
         <div className="navbar-translate">
           {/* LOGO */}
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span><img src={require("assets/logo/nav-logo.png")}/> </span>
+            <span>
+              <img src={require("assets/logo/black-transparent.png")} />{" "}
+            </span>
           </NavbarBrand>
           {/* Popup */}
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
@@ -91,7 +90,11 @@ export default function IndexNavbar() {
           <div className="navbar-collapse-header">
             <Row>
               <Col className="collapse-brand" xs="6">
-                <a href="#pablo" onClick={(e) => e.preventDefault()} className="text-info">
+                <a
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                  className="text-info"
+                >
                   Arda
                 </a>
               </Col>
@@ -107,79 +110,71 @@ export default function IndexNavbar() {
             </Row>
           </div>
 
-
-
-
-
-
           <Nav navbar>
             {/* Dropdowns */}
             {/* Solutions */}
             <UncontrolledDropdown nav>
               <DropdownToggle
                 caret
-                color="default"
                 data-toggle="dropdown"
                 href="#pablo"
                 nav
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Solutions
+                <span className="text-dark">Solutions</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="/technology">
                   <i className="tim-icons icon-atom" />
-                  Technology
+                  <span className="text-dark">Technology</span>
                 </DropdownItem>
                 <DropdownItem href="/consulting">
                   <i className="tim-icons icon-bulb-63" />
-                  Consulting
+                  <span className="text-dark">Consulting</span>
                 </DropdownItem>
                 <DropdownItem href="/services">
                   <i className="tim-icons icon-settings" />
-                  Services
+                  <span className="text-dark">Services</span>
                 </DropdownItem>
                 <DropdownItem href="/hardware">
                   <i className="tim-icons icon-laptop" />
-                  Hardware
+                  <span className="text-dark">Hardware</span>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            {/* Know Us */}
+            {/* About Us */}
             <UncontrolledDropdown nav>
               <DropdownToggle
                 caret
-                color="default"
                 data-toggle="dropdown"
                 href="#pablo"
                 nav
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Know Us
+                <span className="text-dark">About Us</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="/about#Mission">
                   <i className="tim-icons icon-user-run" />
-                  Mision
+                  <span className="text-dark">Mission</span>
                 </DropdownItem>
                 <DropdownItem href="/about#Team">
                   <i className="tim-icons icon-heart-2" />
-                  Meet the Team
+                  <span className="text-dark">Meet the Team</span>
                 </DropdownItem>
                 <DropdownItem href="/about#Partners">
                   <i className="tim-icons icon-single-02" />
-                  Our Partners
+                  <span className="text-dark">Our Partners</span>
                 </DropdownItem>
                 <DropdownItem href="/about#Enqueries">
-                  <i className="tim-icons icon-send" />
-                  Business Enqueries
+                  <span className="text-dark">Business Enqueries</span>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             {/* Success Stories */}
-            <UncontrolledDropdown nav>
+            {/* <UncontrolledDropdown nav>
               <DropdownToggle
                 caret
                 color="default"
@@ -205,10 +200,10 @@ export default function IndexNavbar() {
                   Customer Testimonials
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown> */}
 
             <NavItem className="mr-0 mr-lg-3">
-              <NavLink href="#">
+              <NavLink onClick={scrollToBooking} style={{cursor: "pointer"}}>
                 Get in Touch &nbsp; <i className="tim-icons icon-spaceship" />
               </NavLink>
             </NavItem>
