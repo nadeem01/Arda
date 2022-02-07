@@ -27,7 +27,7 @@ export default function Index() {
       <Navbar />
       <div className="wrapper">
         <Hero
-          title="Future Is Digital"
+          title="The Future Is Digital"
           btn="Book a Call"
           btn_color="success"
           desc="We are Ready to Take your Business to new Heights"
