@@ -22,10 +22,10 @@ import {
   Col,
 } from "reactstrap";
 
-import {db} from "./firebase.js";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "views/IndexViews/firebase-config.js";
 
 export default function Signup() {
-  
   const [fullNameFocus, setFullNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [passwordFocus, setPasswordFocus] = React.useState(false);
@@ -35,22 +35,27 @@ export default function Signup() {
   const [email, setEmail] = React.useState("");
   const [phonenumber, setPhoneNumber] = React.useState("");
 
-
   // Submit Form Data
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    db.collection('form').add({
+    // Make Collection
+    addDoc(collection(db, "contacts"), {
       fullname: fullname,
       email: email,
-      phonenumber: phonenumber
+      phonenumber: phonenumber,
     })
-    .then(() => {
-      alert("Form has been submitted :)");
-    })
-    .catch((error) => {
-      alert("Error");
-    });
+      .then(() => {
+        alert("Our Team will shortly contact you 👍. Thanks for filling out the form.");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    // Reset All fields
+    setFullname("");
+    setEmail("");
+    setPhoneNumber("");
   };
 
   return (
@@ -82,7 +87,9 @@ export default function Signup() {
             >
               <CardHeader>
                 <CardImg alt="..." src={require("assets/img/square5.png")} />
-                <CardTitle tag="h4" className="ml-2">Ready?</CardTitle>
+                <CardTitle tag="h4" className="ml-2">
+                  Ready?
+                </CardTitle>
               </CardHeader>
               <CardBody>
                 <Form className="form" onSubmit={handleSubmit}>
@@ -100,13 +107,8 @@ export default function Signup() {
                     <Input
                       placeholder="Full Name"
                       type="text"
-
-
                       value={fullname}
                       onChange={(e) => setFullname(e.target.value)}
-
-
-
                       onFocus={(e) => setFullNameFocus(true)}
                       onBlur={(e) => setFullNameFocus(false)}
                     />
@@ -125,12 +127,8 @@ export default function Signup() {
                     <Input
                       placeholder="Email"
                       type="text"
-
-
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-
-
                       onFocus={(e) => setEmailFocus(true)}
                       onBlur={(e) => setEmailFocus(false)}
                     />
@@ -148,35 +146,17 @@ export default function Signup() {
                     <Input
                       placeholder="Phone Number"
                       type="text"
-
-
                       value={phonenumber}
                       onChange={(e) => setPhoneNumber(e.target.value)}
-
-
-                      onChange={(e) => setFullname(e.target.value)}
                       onFocus={(e) => setPasswordFocus(true)}
                       onBlur={(e) => setPasswordFocus(false)}
                     />
                   </InputGroup>
-                  <FormGroup check className="text-left">
-                    <Label check>
-                      <Input type="checkbox" />
-                      <span className="text-dark form-check-sign" />
-                      <span className="text-dark">I agree to the </span>
-                      <a href="#pablo" onClick={(e) => e.preventDefault()} className="text-info">
-                        terms and conditions
-                      </a>
-                      .
-                    </Label>
-                  </FormGroup>
+                  <CardFooter>
+                    <input type="submit" className="ml-0 btn btn-info text-white font-weight-bold"/>
+                  </CardFooter>
                 </Form>
               </CardBody>
-              <CardFooter>
-                <Button className="btn-round" color="info" size="lg">
-                  Submit Form
-                </Button>
-              </CardFooter>
             </Card>
           </Col>
         </Row>
