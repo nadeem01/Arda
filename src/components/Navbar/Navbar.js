@@ -57,13 +57,13 @@ export default function IndexNavbar() {
     document.getElementById("Booking").scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Navbar className={"fixed-top " + color + " shadow-sm"} color-on-scroll="100" expand="lg">
+    <Navbar className={"fixed-top " + color + " shadow-sm"} color-on-scroll="100" expand="lg" id="navbar">
       <Container>
         <div className="navbar-translate">
           {/* LOGO */}
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>
-              <img src={require("assets/logo/black-transparent.png")} />{" "}
+              <img src={require("assets/logo/blue-transparent.png")} />{" "}
             </span>
           </NavbarBrand>
           {/* Popup */}
@@ -123,7 +123,7 @@ export default function IndexNavbar() {
                 
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                <span className="text-dark" >Solutions</span>
+                <span className="text-dark font-weight-normal" >Solutions</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="/technology" >
@@ -154,7 +154,7 @@ export default function IndexNavbar() {
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                <span className="text-dark">About Us</span>
+                <span className="text-dark font-weight-normal">About Us</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="/about#Mission">
@@ -205,7 +205,7 @@ export default function IndexNavbar() {
 
             <NavItem className="mr-0 mr-lg-3">
               <NavLink onClick={scrollToBooking} style={{cursor: "pointer"}}>
-                Get in Touch &nbsp; <i className="tim-icons icon-spaceship" />
+                <span className="font-weight-normal">Get in Touch &nbsp; <i className="tim-icons icon-spaceship" /></span>
               </NavLink>
             </NavItem>
 

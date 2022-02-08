@@ -116,6 +116,7 @@ export default function intro() {
                     <h3 className="display-3 text-white font-weight-normal">
                       What We Do?
                     </h3>
+                    <i className="tim-icons icon-minimal-down font-weight-bold"/>
                   </NavLink>
                 </NavItem>
               </Col>
@@ -126,6 +127,7 @@ export default function intro() {
                     <h3 className="display-3 text-white font-weight-normal">
                       Who We Are?
                     </h3>
+                    <i className="tim-icons icon-minimal-down font-weight-bold"/>
                   </NavLink>
                 </NavItem>
               </Col>
@@ -136,6 +138,7 @@ export default function intro() {
                     <h3 className="display-3 text-white font-weight-normal">
                       Success Stories
                     </h3>
+                    <i className="tim-icons icon-minimal-down font-weight-bold"/>
                   </NavLink>
                 </NavItem>
               </Col>

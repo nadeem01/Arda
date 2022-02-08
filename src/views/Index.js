@@ -7,6 +7,7 @@ import Heading from "components/Header/Heading.js";
 import Footer from "components/Footer/Footer.js";
 
 // Index Sections
+import CompaniesSection from "views/IndexViews/CompaniesSection.js";
 import IntroSection from "views/IndexViews/IntroSection";
 import TechnologySection from "views/IndexViews/TechnologySection.js";
 import ConsultingSection from "views/IndexViews/ConsultingSection.js";
@@ -38,6 +39,8 @@ export default function Index() {
           link="/#Booking"
         />
         <div className="main">
+          <Heading title="Trusted By Top Leading Companies" />
+          <CompaniesSection />
           <IntroSection />
           <Heading title="Leading Top notch IT Services" />
           <TechnologySection />
@@ -46,7 +49,7 @@ export default function Index() {
           <HardwareSection />
           <EndingSection />
           <Partners />
-          <Heading title="Get Ready to Serve Support" />
+          <Heading title="Top Maintained Support by Our Team" />
           <BookingSection />
         </div>
         <Footer />
