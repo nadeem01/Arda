@@ -52,21 +52,21 @@ const carouselItems = [
 const items = [
   {
     src: require("assets/img/intro4.jpg"),
-    altText: "Slide 1",
-    caption: "Slide 1",
-    header: "Slide 1 Header",
+    altText: "Arda - The Future is Digital",
+    caption: "",
+    header: "Best Leading IT Company",
   },
   {
     src: require("assets/img/intro1.jpg"),
-    altText: "Slide 2",
-    caption: "Slide 2",
-    header: "Slide 2 Header",
+    altText: "Arda - The Future is Digital",
+    caption: "",
+    header: "Assurance and Quality Guranteed",
   },
   {
     src: require("assets/img/intro2.jpg"),
-    altText: "Slide 3",
-    caption: "Slide 3",
-    header: "Slide 3 Header",
+    altText: "Arda - The Future is Digital",
+    caption: "",
+    header: "Bringing Innovative Ways to Solve Complex Challenges",
   },
 ];
 
@@ -104,8 +104,6 @@ export default function intro() {
             src={require("assets/img/waves.png")}
             style={{ filter: "invert(100%)" }}
           />
-
-          {/* Buttons */}
           <Row className="justify-content-center align-items-center section">
             <Nav
               className="nav-pills-info nav-pills-icons justify-content-center"
@@ -121,7 +119,6 @@ export default function intro() {
                   </NavLink>
                 </NavItem>
               </Col>
-
               <Col lg="4">
                 <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
                   <NavLink href="#wwa" id="pills">
@@ -132,7 +129,6 @@ export default function intro() {
                   </NavLink>
                 </NavItem>
               </Col>
-
               <Col lg="4">
                 <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
                   <NavLink href="#" id="pills">
@@ -143,9 +139,6 @@ export default function intro() {
                   </NavLink>
                 </NavItem>
               </Col>
-
-
-
             </Nav>
           </Row>
         </Container>
