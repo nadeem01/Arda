@@ -3,15 +3,16 @@ import React from "react";
 // Components
 import Navbar from "components/Navbar/Navbar.js";
 import Hero from "components/Header/Hero.js";
+import Heading from "components/Header/Heading.js";
 import Footer from "components/Footer/Footer.js";
 
 // Index Sections
 import IntroSection from "views/IndexViews/IntroSection";
-import Heading from "views/IndexViews/Heading.js";
 import TechnologySection from "views/IndexViews/TechnologySection.js";
 import ConsultingSection from "views/IndexViews/ConsultingSection.js";
 import ServicesSection from "views/IndexViews/ServicesSection.js";
 import HardwareSection from "views/IndexViews/HardwareSection.js";
+import EndingSection from "views/IndexViews/EndingSection.js";
 import BookingSection from "views/IndexViews/BookingSection.js";
 
 export default function Index() {
@@ -35,11 +36,12 @@ export default function Index() {
         />
         <div className="main">
           <IntroSection />
-          <Heading />
+          <Heading title="Leading Top notch IT Services" />
           <TechnologySection />
           <ConsultingSection />
           <ServicesSection />
           <HardwareSection />
+          <EndingSection />
           <BookingSection />
         </div>
         <Footer />

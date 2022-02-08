@@ -27,14 +27,9 @@ export default function Signup() {
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [passwordFocus, setPasswordFocus] = React.useState(false);
   return (
-    <div className="section" id="Booking">
-            <img
-        className="path path1"
-        src={require("assets/img/triunghiuri.png")}
-        style={{ filter: "invert(100%)" }}
-      />
+    <div className="section header-filter" id="Booking">
       <Container>
-        <div className="squares square1" />
+
         <div className="squares square2" />
         <div className="squares square3" />
         <div className="squares square4" />

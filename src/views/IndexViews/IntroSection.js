@@ -21,6 +21,13 @@ import {
   InputGroupText,
   Label,
   UncontrolledCarousel,
+  Badge,
+  NavItem,
+  NavLink,
+  Nav,
+  Pagination,
+  PaginationItem,
+  PaginationLink,
 } from "reactstrap";
 import Image from "views/Pages/Image.js";
 
@@ -66,78 +73,78 @@ const items = [
 export default function intro() {
   return (
     <>
-    <Container className="section">
-      <Container>
-        <Row>
-          <Col lg="6">
-            <h2 className="display-2 text-dark font-weight-bold">
-              Redefining IT Solutions
-            </h2>
-            <p className="description text-dark font-weight-normal">
-              Arda - is a digital IT Consulting & Service provider company
-              established around 5 years back with the mission to build
-              Futuristic products equipped with the best Tools and Technologies
-              available in the market.
-              <br /> <br /> <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              reiciendis pariatur incidunt. Cum, cumque alias laudantium iusto
-              praesentium ratione similique.
-            </p>
-          </Col>
-          <Col lg="6">
-            <img src={require("assets/img/earth3.jpg")} />
-          </Col>
-        </Row>
-        <div className="squares square4" />
-        <img
-          alt="..."
-          className="path path1"
-          src={require("assets/img/waves.png")}
-          style={{ filter: "invert(100%)" }}
-        />
-        <div className="section mt-3 mt-sm-3 mt-md-3 mt-lg-5">
-          <div className="title">
-            <h3 className="text-muted">2015 - Present</h3>
-          </div>
-          <Row className="justify-content-between align-items-center">
-            <Col className="mb-5 mb-lg-0" lg="5">
-              <h1 className="font-weight-bold text-warning">
-                5 Years of Innovations
-              </h1>
-              <p className="text-dark mt-4 font-weight-normal description">
-                Black Design comes with three pre-built pages to help you get
-                started faster. You can change the text and images and you're
-                good to go.
+      <Container className="section">
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="title">
+                <h3 className="text-muted">Mission Statement</h3>
+              </div>
+              <h2 className="display-2 text-dark font-weight-bold">
+                Redefining IT Solutions
+              </h2>
+              <p className="description text-dark font-weight-normal">
+                Arda - is a digital IT Consulting & Service provider company
+                established around 5 years back with the mission to build
+                Futuristic products equipped with the best Tools and
+                Technologies available in the market.
+                <br /> <br /> <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                reiciendis pariatur incidunt. Cum, cumque alias laudantium iusto
+                praesentium ratione similique.
               </p>
-              <Button className="mt-4" color="warning" href="#">
-                Explore What We Do
-              </Button>
             </Col>
             <Col lg="6">
-              <img src={require("assets/img/maintenance.png")} />
-              {/* <UncontrolledCarousel
-                items={carouselItems}
-                indicators={false}
-                autoPlay={false}
-              /> */}
+              <img src={require("assets/img/earth3.jpg")} />
             </Col>
           </Row>
-        </div>
-        <div className="squares square5" />
+          <div className="squares square4" />
+          <img
+            alt="..."
+            className="path path1"
+            src={require("assets/img/waves.png")}
+            style={{ filter: "invert(100%)" }}
+          />
+          
+          <div className="squares square5" />
 
+            {/* Buttons */}
+          <Row className="justify-content-center align-items-center section">
+            <Nav className="nav-pills-info nav-pills-icons" pills>
+              <NavItem className="mx-lg-3">
+                <NavLink href="#pablo" id="pills">
+                  <i className=" display-3 text-white font-weight-bold tim-icons icon-atom" />
+                  <h3 className="display-3 text-white font-weight-normal">
+                    What We Do?
+                  </h3>
+                </NavLink>
+              </NavItem>
 
+              <NavItem className="mx-lg-3">
+                <NavLink href="#pablo" id="pills">
+                <i className=" display-3 text-white font-weight-bold tim-icons icon-atom" />
+                  <h3 className="display-3 text-white font-weight-normal">
+                    Who We Are?
+                  </h3>
+                  </NavLink>
+              </NavItem>
 
-
-
-
-
-
-
-
-
+              <NavItem className="mx-lg-3">
+                <NavLink href="#pablo" id="pills">
+                <i className=" display-3 text-white font-weight-bold tim-icons icon-atom" />
+                  <h3 className="display-3 text-white font-weight-normal">
+                    Success Stories
+                  </h3>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Row>
+          {/* <Col lg="4" className="justify-content-center align-items-center">hi</Col>
+                <Col lg="4" className="justify-content-center align-items-center">hi</Col>
+                <Col lg="4" className="justify-content-center align-items-center">hi</Col> */}
+        </Container>
       </Container>
-    </Container>
-    <UncontrolledCarousel items={items} style={{borderRadius: "0px"}}/>
+      <UncontrolledCarousel items={items} style={{ borderRadius: "0px" }} />
     </>
   );
 }
