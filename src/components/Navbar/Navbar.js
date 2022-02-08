@@ -157,19 +157,20 @@ export default function IndexNavbar() {
                 <span className="text-dark font-weight-normal">About Us</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="/about#Mission">
+                <DropdownItem href="/mission">
                   <i className="tim-icons icon-user-run" />
                   <span className="text-dark">Mission</span>
                 </DropdownItem>
-                <DropdownItem href="/about#Team">
+                {/* <DropdownItem href="/about#Team">
                   <i className="tim-icons icon-heart-2" />
                   <span className="text-dark">Meet the Team</span>
-                </DropdownItem>
-                <DropdownItem href="/about#Partners">
+                </DropdownItem> */}
+                <DropdownItem href="/partners">
                   <i className="tim-icons icon-single-02" />
                   <span className="text-dark">Our Partners</span>
                 </DropdownItem>
-                <DropdownItem href="/about#Enqueries">
+                <DropdownItem href="/enqueries">
+                  <i className="tim-icons icon-send" />
                   <span className="text-dark">Business Enqueries</span>
                 </DropdownItem>
               </DropdownMenu>

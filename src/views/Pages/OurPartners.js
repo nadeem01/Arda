@@ -10,6 +10,7 @@ import Footer from "components/Footer/Footer.js";
 export default function Partners() {
   return (
     <>
+    <Navbar />
     <div className="section section-nucleo-icons" id="Partners">
       <img
         alt="..."
@@ -80,6 +81,7 @@ export default function Partners() {
         
       </Container>
     </div>
+    <Footer />
     </>
   );
 }

@@ -11,6 +11,9 @@ import "App.css";
 import Index from "views/Index.js";
 import About from "views/About.js";
 import Success from "views/Success.js";
+import Mission from "views/Pages/Mission.js";
+import OurPartners from "views/Pages/OurPartners.js";
+import Enqueries from "views/Pages/BusinessEnqueries.js";
 
 // Sections
 import Technology from "views/Pages/Technology.js";
@@ -34,8 +37,13 @@ ReactDOM.render(
       {/* Hardware Page */}
       <Route path="/hardware" render={() => <Hardware />}/>
 
-       {/* About Page */}
-      <Route path="/about" render={() => <About />} />
+       {/* Mission Page */}
+      <Route path="/mission" render={() => <Mission />} />
+      {/* Partners Page */}
+      <Route path="/partners" render={() => <OurPartners />} />
+      {/* Business Enqueries Page */}
+      <Route path="/enqueries" render={() => <Enqueries />} />
+
       {/* Success Page */}
       <Route path="/success" render={() => <Success />} />
       <Redirect from="/" to="/" />
