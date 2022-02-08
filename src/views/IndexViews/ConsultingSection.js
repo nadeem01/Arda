@@ -28,17 +28,17 @@ import {
 
 const carouselItems = [
   {
-    src: require("assets/img/fabien-bazanegue.jpg"),
+    src: require("assets/img/consult1.jpg"),
     altText: "Technology",
     caption: "",
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg"),
+    src: require("assets/img/consult2.jpg"),
     altText: "Future",
     caption: "",
   },
   {
-    src: require("assets/img/mark-finn.jpg"),
+    src: require("assets/img/consult3.jpg"),
     altText: "Team",
     caption: "",
   },
