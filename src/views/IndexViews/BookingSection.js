@@ -22,10 +22,37 @@ import {
   Col,
 } from "reactstrap";
 
+import {db} from "./firebase.js";
+
 export default function Signup() {
+  
   const [fullNameFocus, setFullNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [passwordFocus, setPasswordFocus] = React.useState(false);
+
+  // useState for Form
+  const [fullname, setFullname] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [phonenumber, setPhoneNumber] = React.useState("");
+
+
+  // Submit Form Data
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    db.collection('form').add({
+      fullname: fullname,
+      email: email,
+      phonenumber: phonenumber
+    })
+    .then(() => {
+      alert("Form has been submitted :)");
+    })
+    .catch((error) => {
+      alert("Error");
+    });
+  };
+
   return (
     <div className="section header-filter" id="Booking">
       <Container>
@@ -58,7 +85,7 @@ export default function Signup() {
                 <CardTitle tag="h4" className="ml-2">Ready?</CardTitle>
               </CardHeader>
               <CardBody>
-                <Form className="form">
+                <Form className="form" onSubmit={handleSubmit}>
                   {/* Full Name */}
                   <InputGroup
                     className={classnames({
@@ -73,6 +100,13 @@ export default function Signup() {
                     <Input
                       placeholder="Full Name"
                       type="text"
+
+
+                      value={fullname}
+                      onChange={(e) => setFullname(e.target.value)}
+
+
+
                       onFocus={(e) => setFullNameFocus(true)}
                       onBlur={(e) => setFullNameFocus(false)}
                     />
@@ -91,6 +125,12 @@ export default function Signup() {
                     <Input
                       placeholder="Email"
                       type="text"
+
+
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+
+
                       onFocus={(e) => setEmailFocus(true)}
                       onBlur={(e) => setEmailFocus(false)}
                     />
@@ -108,6 +148,13 @@ export default function Signup() {
                     <Input
                       placeholder="Phone Number"
                       type="text"
+
+
+                      value={phonenumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
+
+
+                      onChange={(e) => setFullname(e.target.value)}
                       onFocus={(e) => setPasswordFocus(true)}
                       onBlur={(e) => setPasswordFocus(false)}
                     />

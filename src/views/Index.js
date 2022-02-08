@@ -50,7 +50,7 @@ export default function Index() {
           <EndingSection />
           <Partners />
           <Heading title="Top Maintained Support by Our Team" />
-          <BookingSection />
+          {/* <BookingSection /> */}
         </div>
         <Footer />
       </div>
