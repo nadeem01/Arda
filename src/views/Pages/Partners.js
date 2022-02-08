@@ -29,7 +29,7 @@ export default function Partners() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                View Demo Icons
+                Read More
               </Button>
               <Button
                 className="btn-simple btn-round"
@@ -39,7 +39,7 @@ export default function Partners() {
                 size="lg"
                 target="_blank"
               >
-                View All Icons
+                View Testimonials
               </Button>
             </div>
           </Col>

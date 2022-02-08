@@ -15,6 +15,9 @@ import HardwareSection from "views/IndexViews/HardwareSection.js";
 import EndingSection from "views/IndexViews/EndingSection.js";
 import BookingSection from "views/IndexViews/BookingSection.js";
 
+// Pages
+import Partners from "views/Pages/Partners.js";
+
 export default function Index() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
@@ -42,6 +45,7 @@ export default function Index() {
           <ServicesSection />
           <HardwareSection />
           <EndingSection />
+          <Partners />
           <BookingSection />
         </div>
         <Footer />

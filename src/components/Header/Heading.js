@@ -35,8 +35,6 @@ export default function Heading(props) {
             {props.title}
             </Container>
           </Container>
-          
-
       </h2>
       </>
   );
