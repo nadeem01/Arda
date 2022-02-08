@@ -116,7 +116,7 @@ export default function intro() {
                     <h3 className="display-3 text-white font-weight-normal">
                       What We Do?
                     </h3>
-                    <i className="tim-icons icon-minimal-down font-weight-bold"/>
+                    <i className="tim-icons icon-minimal-down font-weight-bold" />
                   </NavLink>
                 </NavItem>
               </Col>
@@ -127,7 +127,7 @@ export default function intro() {
                     <h3 className="display-3 text-white font-weight-normal">
                       Who We Are?
                     </h3>
-                    <i className="tim-icons icon-minimal-down font-weight-bold"/>
+                    <i className="tim-icons icon-minimal-down font-weight-bold" />
                   </NavLink>
                 </NavItem>
               </Col>
@@ -138,11 +138,21 @@ export default function intro() {
                     <h3 className="display-3 text-white font-weight-normal">
                       Success Stories
                     </h3>
-                    <i className="tim-icons icon-minimal-down font-weight-bold"/>
+                    <i className="tim-icons icon-minimal-down font-weight-bold" />
                   </NavLink>
                 </NavItem>
               </Col>
             </Nav>
+          </Row>
+
+          <Row>
+            <Col>
+              <p className="description title text-dark font-weight-normal text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                nulla quibusdam dolor consequuntur deleniti cupiditate dolorum
+                dignissimos odio aliquam voluptates?
+              </p>
+            </Col>
           </Row>
         </Container>
       </Container>
