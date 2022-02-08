@@ -46,6 +46,7 @@ export default function Index() {
           <HardwareSection />
           <EndingSection />
           <Partners />
+          <Heading title="Get Ready to Serve Support" />
           <BookingSection />
         </div>
         <Footer />

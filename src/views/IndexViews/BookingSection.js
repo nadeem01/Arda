@@ -29,10 +29,6 @@ export default function Signup() {
   return (
     <div className="section header-filter" id="Booking">
       <Container>
-
-        <div className="squares square2" />
-        <div className="squares square3" />
-        <div className="squares square4" />
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
             <h3 className="display-3 text-dark">

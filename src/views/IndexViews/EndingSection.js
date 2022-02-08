@@ -36,7 +36,7 @@ export default function EndingSection() {
   return (
     <>
     <Heading title="Transforming Business Across the Globe"/>
-    <Container className="section mb-5">
+    <Container className="section mb-5" id="wwa">
       <img
         className="path path1"
         src={require("assets/img/triunghiuri.png")}

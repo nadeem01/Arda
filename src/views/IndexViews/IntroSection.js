@@ -104,43 +104,50 @@ export default function intro() {
             src={require("assets/img/waves.png")}
             style={{ filter: "invert(100%)" }}
           />
-          
-          <div className="squares square5" />
 
-            {/* Buttons */}
+          {/* Buttons */}
           <Row className="justify-content-center align-items-center section">
-            <Nav className="nav-pills-info nav-pills-icons" pills>
-              <NavItem className="mx-lg-3">
-                <NavLink href="#pablo" id="pills">
-                  <i className=" display-3 text-white font-weight-bold tim-icons icon-atom" />
-                  <h3 className="display-3 text-white font-weight-normal">
-                    What We Do?
-                  </h3>
-                </NavLink>
-              </NavItem>
-
-              <NavItem className="mx-lg-3">
-                <NavLink href="#pablo" id="pills">
-                <i className=" display-3 text-white font-weight-bold tim-icons icon-atom" />
-                  <h3 className="display-3 text-white font-weight-normal">
-                    Who We Are?
-                  </h3>
+            <Nav
+              className="nav-pills-info nav-pills-icons justify-content-center"
+              pills
+            >
+              <Col lg="4">
+                <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
+                  <NavLink href="#wwd" id="pills">
+                    <img src={require("assets/img/work.png")} />
+                    <h3 className="display-3 text-white font-weight-normal">
+                      What We Do?
+                    </h3>
                   </NavLink>
-              </NavItem>
+                </NavItem>
+              </Col>
 
-              <NavItem className="mx-lg-3">
-                <NavLink href="#pablo" id="pills">
-                <i className=" display-3 text-white font-weight-bold tim-icons icon-atom" />
-                  <h3 className="display-3 text-white font-weight-normal">
-                    Success Stories
-                  </h3>
-                </NavLink>
-              </NavItem>
+              <Col lg="4">
+                <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
+                  <NavLink href="#wwa" id="pills">
+                    <img src={require("assets/img/we.png")} />
+                    <h3 className="display-3 text-white font-weight-normal">
+                      Who We Are?
+                    </h3>
+                  </NavLink>
+                </NavItem>
+              </Col>
+
+              <Col lg="4">
+                <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
+                  <NavLink href="#" id="pills">
+                    <img src={require("assets/img/success.png")} />
+                    <h3 className="display-3 text-white font-weight-normal">
+                      Success Stories
+                    </h3>
+                  </NavLink>
+                </NavItem>
+              </Col>
+
+
+
             </Nav>
           </Row>
-          {/* <Col lg="4" className="justify-content-center align-items-center">hi</Col>
-                <Col lg="4" className="justify-content-center align-items-center">hi</Col>
-                <Col lg="4" className="justify-content-center align-items-center">hi</Col> */}
         </Container>
       </Container>
       <UncontrolledCarousel items={items} style={{ borderRadius: "0px" }} />

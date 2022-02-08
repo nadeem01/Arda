@@ -47,7 +47,7 @@ const carouselItems = [
 export default function TechnologySection() {
   return (
     <>
-      <Container className="section">
+      <Container className="section" id="wwd">
         <Container>
           <Row>
             <Col lg="6">
@@ -72,7 +72,6 @@ export default function TechnologySection() {
               </Button>
             </Col>
           </Row>
-          <div className="squares square7" />
         </Container>
       </Container>
 

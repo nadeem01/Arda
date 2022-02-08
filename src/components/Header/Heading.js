@@ -29,7 +29,7 @@ import {
 export default function Heading(props) {
   return(
       <>
-      <h2 className="mt-5 display-3 text-white font-weight-bolder text-center border-top border-bottom border-info py-3" id="heading">
+      <h2 className="display-3 text-white font-weight-bolder text-center shadow-lg py-3" id="heading">
           <Container>
             <Container>
             {props.title}
