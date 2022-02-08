@@ -42,8 +42,30 @@ const carouselItems = [
   },
 ];
 
+const items = [
+  {
+    src: require("assets/img/intro4.jpg"),
+    altText: "Slide 1",
+    caption: "Slide 1",
+    header: "Slide 1 Header",
+  },
+  {
+    src: require("assets/img/intro1.jpg"),
+    altText: "Slide 2",
+    caption: "Slide 2",
+    header: "Slide 2 Header",
+  },
+  {
+    src: require("assets/img/intro2.jpg"),
+    altText: "Slide 3",
+    caption: "Slide 3",
+    header: "Slide 3 Header",
+  },
+];
+
 export default function intro() {
   return (
+    <>
     <Container className="section">
       <Container>
         <Row>
@@ -63,7 +85,7 @@ export default function intro() {
             </p>
           </Col>
           <Col lg="6">
-            <img src={require("assets/img/earth2.jpg")} />
+            <img src={require("assets/img/earth3.jpg")} />
           </Col>
         </Row>
         <div className="squares square4" />
@@ -102,7 +124,20 @@ export default function intro() {
           </Row>
         </div>
         <div className="squares square5" />
+
+
+
+
+
+
+
+
+
+
+
       </Container>
     </Container>
+    <UncontrolledCarousel items={items} style={{borderRadius: "0px"}}/>
+    </>
   );
 }

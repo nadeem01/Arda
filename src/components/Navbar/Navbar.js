@@ -120,12 +120,13 @@ export default function IndexNavbar() {
                 href="#pablo"
                 nav
                 onClick={(e) => e.preventDefault()}
+                
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                <span className="text-dark">Solutions</span>
+                <span className="text-dark" >Solutions</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="/technology">
+                <DropdownItem href="/technology" >
                   <i className="tim-icons icon-atom" />
                   <span className="text-dark">Technology</span>
                 </DropdownItem>

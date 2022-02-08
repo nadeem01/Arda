@@ -29,7 +29,7 @@ import {
 export default function Heading() {
   return(
       <>
-      <h2 className="display-3 text-info font-weight-bold text-center">
+      <h2 className="mt-5 display-3 text-info font-weight-bold text-center">
           What We Offer?
       </h2>
       </>
