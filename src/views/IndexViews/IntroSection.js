@@ -98,7 +98,6 @@ export default function intro() {
               <img src={require("assets/img/earth3.jpg")} />
             </Col>
           </Row>
-          <div className="squares square4" />
           <img
             alt="..."
             className="path path1"

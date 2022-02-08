@@ -71,6 +71,7 @@ export default function Partners() {
             </span>
           </a>
         </div>
+        
       </Container>
     </div>
   );
