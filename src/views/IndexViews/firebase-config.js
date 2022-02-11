@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCsN3QgHhbuj-RiEGvOIJpzeSeCzGOZhI4",
-  authDomain: "arda-test-53d00.firebaseapp.com",
-  projectId: "arda-test-53d00",
-  storageBucket: "arda-test-53d00.appspot.com",
-  messagingSenderId: "535538323148",
-  appId: "1:535538323148:web:5f927c10eef8bd9f48bc69"
+  apiKey: "AIzaSyDJ4EEUYdKMptlzDQrdlVWiReKaGHhc6jc",
+  authDomain: "arda-form-data.firebaseapp.com",
+  projectId: "arda-form-data",
+  storageBucket: "arda-form-data.appspot.com",
+  messagingSenderId: "219060607425",
+  appId: "1:219060607425:web:20a243d3794e5e6d197740"
 };
 
 const app = initializeApp(firebaseConfig);

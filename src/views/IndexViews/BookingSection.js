@@ -40,7 +40,7 @@ export default function Signup() {
     e.preventDefault();
 
     // Make Collection
-    addDoc(collection(db, "contacts"), {
+    addDoc(collection(db, "data"), {
       fullname: fullname,
       email: email,
       phonenumber: phonenumber,
