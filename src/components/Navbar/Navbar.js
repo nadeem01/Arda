@@ -52,24 +52,30 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  // Smooth scroll to Booking section
   const scrollToBooking = () => {
-    document.getElementById("Booking").scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("download-section")
+      .scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Navbar className={"fixed-top " + color + " shadow-sm"} color-on-scroll="100" expand="lg" id="navbar">
+    <Navbar
+      className={"shadow-sm fixed-top " + color}
+      color-on-scroll="100"
+      expand="lg"
+      id="topbar"
+    >
       <Container>
         <div className="navbar-translate">
-          {/* LOGO */}
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>
-              <img src={require("assets/logo/blue-transparent.png")} />{" "}
+              <img src={require("assets/logo/blue-transparent.png")} />
             </span>
           </NavbarBrand>
-          {/* Popup */}
+
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            The Future is Digital
+            The Future Is Digital
           </UncontrolledTooltip>
+
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -81,7 +87,7 @@ export default function IndexNavbar() {
           </button>
         </div>
         <Collapse
-          className={"justify-content-end " + collapseOut}
+          className={"bg-white justify-content-end " + collapseOut}
           navbar
           isOpen={collapseOpen}
           onExiting={onCollapseExiting}
@@ -91,20 +97,20 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a
-                  href="#pablo"
+                  href="#"
+                  className="bg-white"
                   onClick={(e) => e.preventDefault()}
-                  className="text-info"
                 >
-                  Arda
+                  <img src={require("assets/logo/blue-transparent.png")} />
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
                 <button
                   aria-expanded={collapseOpen}
-                  className="navbar-toggler"
+                  className="navbar-toggler text-dark font-weight-bold"
                   onClick={toggleCollapse}
                 >
-                  <i className="tim-icons icon-simple-remove" />
+                  <i className="text-dark font-weight-bold tim-icons icon-simple-remove" />
                 </button>
               </Col>
             </Row>
@@ -120,13 +126,12 @@ export default function IndexNavbar() {
                 href="#pablo"
                 nav
                 onClick={(e) => e.preventDefault()}
-                
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                <span className="text-dark font-weight-normal" >Solutions</span>
+                <span className="text-dark font-weight-normal">Solutions</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="/technology" >
+                <DropdownItem href="/technology">
                   <i className="tim-icons icon-atom" />
                   <span className="text-dark">Technology</span>
                 </DropdownItem>
@@ -205,8 +210,10 @@ export default function IndexNavbar() {
             </UncontrolledDropdown> */}
 
             <NavItem className="mr-0 mr-lg-3">
-              <NavLink onClick={scrollToBooking} style={{cursor: "pointer"}}>
-                <span className="font-weight-normal">Get in Touch &nbsp; <i className="tim-icons icon-spaceship" /></span>
+              <NavLink onClick={scrollToBooking} style={{ cursor: "pointer" }}>
+                <span className="font-weight-normal">
+                  Get in Touch &nbsp; <i className="tim-icons icon-spaceship" />
+                </span>
               </NavLink>
             </NavItem>
 
@@ -221,7 +228,7 @@ export default function IndexNavbar() {
                 title="Follow us on Twitter"
               >
                 <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none text-white">Twitter</p>
+                <p className="d-lg-none d-xl-none text-dark">Twitter</p>
               </NavLink>
             </NavItem>
             {/* Facebook Handle */}
@@ -234,7 +241,7 @@ export default function IndexNavbar() {
                 title="Like us on Facebook"
               >
                 <i className="fab fa-facebook-square" />
-                <p className="d-lg-none d-xl-none text-white">Facebook</p>
+                <p className="d-lg-none d-xl-none text-dark">Facebook</p>
               </NavLink>
             </NavItem>
             {/* Instagram Handle */}
@@ -247,7 +254,7 @@ export default function IndexNavbar() {
                 title="Follow us on Instagram"
               >
                 <i className="fab fa-instagram" />
-                <p className="d-lg-none d-xl-none text-white">Instagram</p>
+                <p className="d-lg-none d-xl-none text-dark">Instagram</p>
               </NavLink>
             </NavItem>
           </Nav>
