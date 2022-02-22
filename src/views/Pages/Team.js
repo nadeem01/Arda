@@ -10,7 +10,7 @@ export default function Team() {
   return(
       <>
         <Container className="section" id="Team">
-            Team
+           Team
         </Container>
       </>
   );
