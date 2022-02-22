@@ -1,9 +1,6 @@
 import React from "react";
 import "assets/css/nucleo-icons.css";
 
-import classnames from "classnames";
-// react plugin used to create datetimepicker
-import ReactDatetime from "react-datetime";
 
 // reactstrap components
 import {

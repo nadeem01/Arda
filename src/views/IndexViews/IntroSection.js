@@ -1,8 +1,5 @@
 import React from "react";
 import "./intro.css"
-import classnames from "classnames";
-// plugin that creates slider
-import Slider from "nouislider";
 // reactstrap components
 import {
   Container,
