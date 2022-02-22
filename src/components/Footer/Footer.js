@@ -101,7 +101,6 @@ export default function Footer() {
               <Button
               style={{background:" #3b5998"}}
                 className="btn-icon btn-neutral btn-round btn-simple  mr-1"
-                color="default"
                 href="#"
                 id="tooltip230450801"
                 target="_blank"
