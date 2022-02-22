@@ -53,7 +53,7 @@
     "map-sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css --source-map true"
   },
   "engines": {
-    "node": "^16"
+    "node": "^16.9.1"
   },
   "eslintConfig": {
     "extends": [
