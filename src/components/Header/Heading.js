@@ -1,6 +1,7 @@
 import React from "react";
 import "assets/css/nucleo-icons.css";
 import "./Heading.css"
+import {Container} from "reactstrap";
 export default function Heading(props) {
   return(
       <>
