@@ -1,4 +1,5 @@
 import React from "react";
+import "./intro.css"
 import classnames from "classnames";
 // plugin that creates slider
 import Slider from "nouislider";
@@ -74,84 +75,73 @@ export default function intro() {
   return (
     <>
       <Container className="section">
-        <Container>
-          <Row>
+        <Container >
+         <Row>
             <Col lg="6">
               <div className="title">
                 <h3 className="text-muted">Mission Statement</h3>
               </div>
-              <h2 className="display-2 text-dark font-weight-bold">
+              <h2 style={{color: "#252f3e"}} className="display-2 text-info  font-weight-bold">
                 Redefining IT Solutions
               </h2>
-              <p className="description text-dark font-weight-normal">
+              <h4 className="description font-weight-normal">
                 Arda - is a digital IT Consulting & Service provider company
                 established around 5 years back with the mission to build
                 Futuristic products equipped with the best Tools and
                 Technologies available in the market.
-                <br /> <br /> <br />
+                <br />  <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
                 reiciendis pariatur incidunt. Cum, cumque alias laudantium iusto
                 praesentium ratione similique.
-              </p>
+              </h4>
             </Col>
-            <Col lg="6">
-              <img src={require("assets/img/earth3.jpg")} />
+            <Col lg="6" className="py-5">
+              <img className="my-5 " src={require("assets/img/it-solutions.jpg")} />
             </Col>
-          </Row>
+          {/* </Row> */}
           <img
             alt="..."
             className="path path1"
             src={require("assets/img/waves.png")}
             style={{ filter: "invert(100%)" }}
           />
-          <Row className="justify-content-center align-items-center section">
-            <Nav
-              className="nav-pills-info nav-pills-icons justify-content-center"
-              pills
-            >
-              <Col lg="4">
-                <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
-                  <NavLink href="#wwd" id="pills">
-                    <img src={require("assets/img/work.png")} />
-                    <h3 className="display-3 text-white font-weight-normal">
-                      What We Do?
-                    </h3>
-                    <i className="tim-icons icon-minimal-down font-weight-bold" />
-                  </NavLink>
-                </NavItem>
-              </Col>
-              <Col lg="4">
-                <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
-                  <NavLink href="#wwa" id="pills">
-                    <img src={require("assets/img/we.png")} />
-                    <h3 className="display-3 text-white font-weight-normal">
-                      Who We Are?
-                    </h3>
-                    <i className="tim-icons icon-minimal-down font-weight-bold" />
-                  </NavLink>
-                </NavItem>
-              </Col>
-              <Col lg="4">
-                <NavItem className="mx-0 mx-lg-3 mb-4 mb-sm-4 mb-lg-0 shadow-lg">
-                  <NavLink href="#" id="pills">
-                    <img src={require("assets/img/success.png")} />
-                    <h3 className="display-3 text-white font-weight-normal">
-                      Success Stories
-                    </h3>
-                    <i className="tim-icons icon-minimal-down font-weight-bold" />
-                  </NavLink>
-                </NavItem>
-              </Col>
-            </Nav>
           </Row>
-
           <Row>
             <Col>
-              <p className="description title text-dark font-weight-normal text-center">
+              <p className="display-4 font-weight-normal  text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
                 nulla quibusdam dolor consequuntur deleniti cupiditate dolorum
                 dignissimos odio aliquam voluptates?
               </p>
+            </Col>
+          </Row>
+          <Row className="d-flex justify-content-center mt-5">
+            <Col lg="4"  className="d-flex justify-content-center align-items-center">
+              <a href="#wwd" className="card human-resources">
+                <div className="overlay" />
+                <div className="circle">
+                    <img src={require("assets/img/work.png")} width="66px" height="77px" />
+                </div>
+                <p className="hvoerPTag"> What We Do?</p>
+              </a>
+            </Col>
+            <Col lg="4" className="d-flex justify-content-center align-items-center">
+              <a href="#wwa" className="card human-resources">
+                <div className="overlay" />
+                <div className="circle">
+                    <img src={require("assets/img/we.png")} width="66px" height="77px" />
+                </div>
+                <p  className="hvoerPTag"> Who We Are?</p>
+              </a>
+            </Col>
+            <Col lg="4"  className="d-flex justify-content-center align-items-center">
+              <a href="#wwd" className="card human-resources">
+                <div className="overlay" />
+                <div className="circle">
+                    <img src={require("assets/img/success.png")} width="66px" height="77px" />
+                </div>
+                <p className="hvoerPTag"> Success Stories</p>
+              </a>
             </Col>
           </Row>
         </Container>

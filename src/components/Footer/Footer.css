@@ -1,0 +1,12 @@
+.footer{
+    border: none !important;
+    background-image: url(https://www.digitalsilk.com/wp-content/themes/digitalsilk/assets/images/bg/footerBG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.linkModified:hover{
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+}
+.linkModified{
+    font-size:0.90rem !important ;
+}

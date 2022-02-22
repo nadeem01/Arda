@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import "./Carousel.css"
 // plugin that creates slider
 import Slider from "nouislider";
 // reactstrap components

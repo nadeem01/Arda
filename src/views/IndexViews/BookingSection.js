@@ -63,19 +63,19 @@ export default function Signup() {
       <Container>
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
-            <h3 className="display-3 text-dark">
+            <h1 className="font-weight-bold text-info">
               Let's Start <br />
-              <span className="text-dark">Book a Quick call</span>
-            </h3>
-            <p className="text-dark mb-3 font-weight-normal description">
+              <span className="font-weight-bold text-info">Book a Quick call</span>
+            </h1>
+            <h4 className="description font-weight-normal">
               The Design System comes with four pre-built pages to help you get
               started faster. You can change the text and images and you're good
               to go. More importantly, looking at them will give you a picture
               of what you can built with this powerful Bootstrap 4 Design
               System.
-            </p>
+            </h4>
             <div className="btn-wrapper">
-              <Button color="info" to="#" tag={Link}>
+              <Button class="mt-4 btn btn-info" color="info" to="#" tag={Link}>
                 Contact Us
               </Button>
             </div>
@@ -83,18 +83,19 @@ export default function Signup() {
           <Col className="mb-lg-auto" lg="6">
             <Card
               className="card-register"
-              style={{ backgroundColor: "#ffffff" }}
+              style={{width:"fit-content", height:"auto",  backgroundColor: "#ffffff", boxShadow: "2px 21px 14px 1px rgba(0, 0, 0, 0.2)" }}
             >
-              <CardHeader>
-                <CardImg alt="..." src={require("assets/img/square5.png")} />
-                <CardTitle tag="h4" className="ml-2">
+              <CardHeader className="py-3">
+                {/* <CardImg alt="..." src={require("assets/img/square5.png")} /> */}
+                <h1 style={{color:"#1d8cf8"}}  className="ml-2 font-weight-bold text-info">
                   Ready?
-                </CardTitle>
+                </h1>
               </CardHeader>
               <CardBody>
                 <Form className="form" onSubmit={handleSubmit}>
                   {/* Full Name */}
                   <InputGroup
+                  style={{    borderColor: "#1d8cf8"}}
                     className={classnames({
                       "input-group-focus": fullNameFocus,
                     })}

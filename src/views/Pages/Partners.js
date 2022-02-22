@@ -29,8 +29,8 @@ export default function Partners() {
             </h4>
             <div className="btn-wrapper">
               <Button
-                className="btn-round"
-                color="info"
+                className="btn btn-info btn-round"
+                // color="info"
                 href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -52,27 +52,15 @@ export default function Partners() {
         </Row>
         <div className="blur-hover">
           <a href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons">
-            <div className="icons-container blur-item on-screen mt-5">
-              {/* Center */}
-              <i className="fab fa-google text-default" />
-              {/* Right 1 */}
-              <i className="fab fa-facebook display-1 text-default" />
-              <i className="fab fa-amazon display-1 text-default" />
-              <i className="fab fa-microsoft display-1 text-default" />
-              {/* Right 2 */}
-              <i className="fab fa-twitte display-1 text-default" />
-              <i className="fab fa-spotify display-1 text-default" />
-              <i className="fab fa-apple display-1 text-default" />
-              {/* Left 1 */}
-              <i className="fab fa-linkedin display-1 text-default" />
-              <i className="fab fa-snapchat display-1 text-default" />
-              <i className="fab fa-github display-1 text-default" />
-              {/* Left 2 */}
-              <i className="fab fa-instagram display-1 text-default" />
-              <i className="fab fa-youtube display-1 text-default" />
-              <i className="fab fa-skype display-1 text-default" />
-            </div>
-            <span className="blur-hidden h5 text-warning">
+              <div className="d-flex justify-content-center align-items-center blur-item on-screen mt-3">
+                <img  className="mr-4"src={require("assets/client-logos/Buraq Properties.png")} width={100} height={90} />
+                <img  className="mr-4" src={require("assets/client-logos/Eclaric Logo-01.jpg")} width={100} height={90} />
+                <img  className="mr-4" src={require("assets/client-logos/Flex KF Traders-01.png")} width={100} height={90} />
+                <img  className="mr-4" src={require("assets/client-logos/Let Start.png")} width={100} height={90} />
+                <img  className="mr-4" src={require("assets/client-logos/NExt Generation.png")} width={100} height={90} />
+                <img src={require("assets/client-logos/Tradify.png")} width={100} height={90} />
+              </div>
+            <span style={{textShadow: "20px 20px 20px #9A9A9A", color:"#9A9A9A"}} className="font-weight-bold description blur-hidden h3 text-warning">
               Read Customer Testimonials
             </span>
           </a>

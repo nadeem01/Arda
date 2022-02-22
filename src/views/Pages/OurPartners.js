@@ -20,7 +20,7 @@ export default function Partners() {
       <Container className="section">
         <Row className="justify-content-center">
           <Col lg="8" md="12">
-            <h2 className="display-2 text-info text-center">Our Partners</h2>
+            <h2 className="display-2 text-success text-center">Our Partners</h2>
             <h4 className="description font-weight-normal">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
               eligendi dolore ad eum magni ratione, enim dolor ipsam veritatis
@@ -30,8 +30,7 @@ export default function Partners() {
             </h4>
             <div className="btn-wrapper">
               <Button
-                className="btn-round"
-                color="info"
+                color="primary"
                 href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -51,27 +50,29 @@ export default function Partners() {
             </div>
           </Col>
         </Row>
-        <div className="blur-hover">
+        <div className="blur-hover text-dark">
           <a href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons">
             <div className="icons-container blur-item on-screen mt-5">
               {/* Center */}
-              <i className="fab fa-google text-default" />
+              {/* <i className="fab fa-google text-default" /> */}
+              <img src={require("assets/client-logos/Buraq Properties.png")} height={50} height={50} />
+
               {/* Right 1 */}
-              <i className="fab fa-facebook display-1 text-default" />
-              <i className="fab fa-amazon display-1 text-default" />
-              <i className="fab fa-microsoft display-1 text-default" />
+              {/* <i className="fab fa-facebook display-1 text-default" /> */}
+              {/* <i className="fab fa-amazon display-1 text-default" /> */}
+              {/* <i className="fab fa-microsoft display-1 text-default" /> */}
               {/* Right 2 */}
-              <i className="fab fa-twitte display-1 text-default" />
+              {/* <i className="fab fa-twitte display-1 text-default" /> */}
               <i className="fab fa-spotify display-1 text-default" />
-              <i className="fab fa-apple display-1 text-default" />
+              {/* <i className="fab fa-apple display-1 text-default" /> */}
               {/* Left 1 */}
-              <i className="fab fa-linkedin display-1 text-default" />
-              <i className="fab fa-snapchat display-1 text-default" />
-              <i className="fab fa-github display-1 text-default" />
+              {/* <i className="fab fa-linkedin display-1 text-default" /> */}
+              {/* <i className="fab fa-snapchat display-1 text-default" /> */}
+              {/* <i className="fab fa-github display-1 text-default" /> */}
               {/* Left 2 */}
-              <i className="fab fa-instagram display-1 text-default" />
-              <i className="fab fa-youtube display-1 text-default" />
-              <i className="fab fa-skype display-1 text-default" />
+              {/* <i className="fab fa-instagram display-1 text-default" /> */}
+              {/* <i className="fab fa-youtube display-1 text-default" /> */}
+              {/* <i className="fab fa-skype display-1 text-default" /> */}
             </div>
             <span className="blur-hidden h5 text-warning">
               Read Customer Testimonials

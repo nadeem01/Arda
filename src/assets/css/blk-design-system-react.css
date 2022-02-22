@@ -11304,7 +11304,7 @@ p {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 5px; }
   p.description {
-    font-size: 1.14em; }
+    font-size: 1.14em; };
 
 .title {
   margin-top: 30px;
@@ -13498,7 +13498,9 @@ hr {
 
 .main {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding-top: 3em;
+}
 
 .section-navbars {
   padding-bottom: 0;
@@ -13844,7 +13846,7 @@ hr {
 
 .blur-hover {
   position: relative;
-  padding-bottom: 100px; }
+ }
   .blur-hover .blur-item {
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
     will-change: transform;

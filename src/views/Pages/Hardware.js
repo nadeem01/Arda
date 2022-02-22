@@ -122,12 +122,12 @@ export default function Hardware() {
                 </b>
               </Row>
               <Row className="justify-content-center">
-                <p className="text-center font-weight-normal">
+                <h4 className="description text-center font-weight-normal">
                   Hardware support is vital to a business's IT. It works to
                   ensure smooth,trouble-free operations.In addition to software,
                   device driver, and firmware updates,hardware can fail,
                   requiring troubleshooting .
-                </p>
+                </h4>
               </Row>
             </Col>
           </Row>

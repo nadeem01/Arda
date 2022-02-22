@@ -1,0 +1,5 @@
+.modifiedCss{
+    color: #1190cb;
+   padding-top: 1em;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}

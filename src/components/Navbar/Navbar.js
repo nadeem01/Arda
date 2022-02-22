@@ -18,7 +18,7 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
-
+import "./Navbar.css"
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
@@ -65,7 +65,7 @@ export default function IndexNavbar() {
       id="topbar"
     >
       <Container>
-        <div className="navbar-translate">
+        <div className="modifiedNav navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>
               <img src={require("assets/logo/blue-transparent.png")} />
@@ -127,8 +127,8 @@ export default function IndexNavbar() {
                 nav
                 onClick={(e) => e.preventDefault()}
               >
-                <i className="fa fa-cogs d-lg-none d-xl-none" />
-                <span className="text-dark font-weight-normal">Solutions</span>
+                <i className="modifiedColor  fa fa-cogs d-lg-none d-xl-none" />
+                <span  className="modifiedColor text-dark font-weight-normal">Solutions</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="/technology">
@@ -156,10 +156,11 @@ export default function IndexNavbar() {
                 data-toggle="dropdown"
                 href="#pablo"
                 nav
+                className="modifiedColor"
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                <span className="text-dark font-weight-normal">About Us</span>
+                <span className=" modifiedColor text-dark font-weight-normal">About Us</span>
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="/mission">
@@ -211,7 +212,7 @@ export default function IndexNavbar() {
 
             <NavItem className="mr-0 mr-lg-3">
               <NavLink onClick={scrollToBooking} style={{ cursor: "pointer" }}>
-                <span className="font-weight-normal">
+                <span className="modifiedColor font-weight-normal">
                   Get in Touch &nbsp; <i className="tim-icons icon-spaceship" />
                 </span>
               </NavLink>
@@ -227,7 +228,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Twitter"
               >
-                <i className="fab fa-twitter" />
+                <i className="modifiedColor fab fa-twitter" />
                 <p className="d-lg-none d-xl-none text-dark">Twitter</p>
               </NavLink>
             </NavItem>
@@ -240,7 +241,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Like us on Facebook"
               >
-                <i className="fab fa-facebook-square" />
+                <i className=" modifiedColor fab fa-facebook-square" />
                 <p className="d-lg-none d-xl-none text-dark">Facebook</p>
               </NavLink>
             </NavItem>
@@ -253,7 +254,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Instagram"
               >
-                <i className="fab fa-instagram" />
+                <i className="modifiedColor fab fa-instagram" />
                 <p className="d-lg-none d-xl-none text-dark">Instagram</p>
               </NavLink>
             </NavItem>

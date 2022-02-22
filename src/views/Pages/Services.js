@@ -64,11 +64,11 @@ export default function Services() {
                 <h2 className="display-2 text-dark font-weight-bold">
                   Top notch Services
                 </h2>
-                <p className="description text-dark font-weight-normal">
+                <h4 className="description font-weight-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dolorem, itaque? Explicabo autem laborum, totam facere
                   assumenda commodi sint incidunt reiciendis!
-                </p>
+                </h4>
                 <Button className="mt-3">Explore Areas</Button>
               </Col>
               <Col lg="6">

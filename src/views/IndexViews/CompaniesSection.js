@@ -33,7 +33,7 @@ export default function CompaniesSection() {
         <Container>
           <Row className="justify-content-center">
             <Col className="justify-content-center" lg="12">
-              <p className="description text-dark font-weight-normal text-center">
+              <p className="display-4  font-weight-normal text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
                 nostrum, eligendi ducimus doloribus deserunt reprehenderit, enim
                 sapiente facilis quasi ullam similique recusandae consequuntur

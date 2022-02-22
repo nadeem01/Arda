@@ -1,0 +1,13 @@
+.modifiedNav{
+    padding-left: inherit;
+}
+
+@media only screen and (min-width: 990px){
+    .modifiedColor{
+        color:white !important
+    }
+    .dropdown-toggle::after{
+        color:white !important;
+    
+    }
+}

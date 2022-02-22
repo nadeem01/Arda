@@ -58,16 +58,16 @@ export default function ServicesSection() {
               />
             </Col>
             <Col lg="6">
-              <h2 className="mt-2 mt-lg-0 display-2 text-dark font-weight-bold">
+              <h2 className="mt-2 mt-lg-0 display-2 text-info font-weight-bold">
                 Services <i className="tim-icons icon-scissors" />
               </h2>
-              <p className="description text-dark font-weight-normal">
+              <h4 className="description font-weight-normal">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
                 consequuntur, doloribus quisquam accusantium ducimus tenetur quo
                 maiores, quis unde laborum dolorum magni amet pariatur odio
                 nesciunt voluptas provident sunt aut!
-              </p>
-              <Button className="mt-3" color="warning" href="/services">
+              </h4>
+              <Button className="mt-3 btn btn-info"  href="/services">
                 Explore More
               </Button>
             </Col>

@@ -35,7 +35,7 @@ import Heading from "components/Header/Heading.js";
 export default function EndingSection() {
   return (
     <>
-    <Heading title="Transforming Business Across the Globe"/>
+    <Heading className="display-4  font-weight-normal text-center" title="Transforming Business Across the Globe"/>
     <Container className="section mb-5" id="wwa">
       <img
         className="path path1"
@@ -51,17 +51,17 @@ export default function EndingSection() {
             <h1 className="font-weight-bold text-info">
               5 Years of Innovations
             </h1>
-            <p className="text-dark mt-4 font-weight-normal description">
+            <h4 className="description font-weight-normal">
               Black Design comes with three pre-built pages to help you get
               started faster. You can change the text and images and you're good
               to go.
-            </p>
-            <Button className="mt-4" color="info" href="#">
+            </h4>
+            <Button className="mt-4 btn btn-info"  href="#">
               Explore What We Do
             </Button>
           </Col>
           <Col lg="6">
-            <img src={require("assets/img/maintenance.png")} />
+            <img src={require("assets/img/innovation.jpg")} />
           </Col>
         </Row>
       </Container>

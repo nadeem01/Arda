@@ -34,7 +34,7 @@ export default function Index() {
         <Hero
           title="The Future Is Digital"
           btn="Book a Call"
-          btn_color="success"
+          btn_color="primary"
           desc="We are Ready to Take your Business to new Heights"
           link="/#Booking"
         />
