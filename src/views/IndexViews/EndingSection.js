@@ -5,29 +5,9 @@ import Slider from "nouislider";
 // reactstrap components
 import {
   Button,
-  FormGroup,
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
-  UncontrolledPopover,
-  PopoverBody,
-  PopoverHeader,
-  Modal,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Label,
-  UncontrolledCarousel,
-  Badge,
-  NavItem,
-  NavLink,
-  Nav,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
 } from "reactstrap";
 
 import Heading from "components/Header/Heading.js";

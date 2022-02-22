@@ -7,23 +7,8 @@ import ReactDatetime from "react-datetime";
 
 // reactstrap components
 import {
-  Button,
-  FormGroup,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip,
-  UncontrolledPopover,
-  PopoverBody,
-  PopoverHeader,
-  Modal,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Label,
-  UncontrolledCarousel,
 } from "reactstrap";
 
 // Components

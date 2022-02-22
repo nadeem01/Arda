@@ -5,30 +5,10 @@ import classnames from "classnames";
 import Slider from "nouislider";
 // reactstrap components
 import {
-  Button,
-  FormGroup,
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
-  UncontrolledPopover,
-  PopoverBody,
-  PopoverHeader,
-  Modal,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Label,
   UncontrolledCarousel,
-  Badge,
-  NavItem,
-  NavLink,
-  Nav,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
 } from "reactstrap";
 import Image from "views/Pages/Image.js";
 

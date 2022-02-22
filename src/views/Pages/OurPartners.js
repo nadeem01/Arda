@@ -4,7 +4,6 @@ import { Button, Container, Row, Col } from "reactstrap";
 
 // Components
 import Navbar from "components/Navbar/Navbar.js";
-import Enqueries from "components/Enqueries/Enqueries.js";
 import Footer from "components/Footer/Footer.js";
 
 export default function Partners() {
